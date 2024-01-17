@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+.container{
+    display: flex;
+    width: 95vw;
+    height: 100vh;
+    padding: 30px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#search_bar{
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+#table{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#emoji_result{
+    padding: 20px;
+    text-align: center;
+}
+
+.rows{
+    display: flex;
+    border-bottom: 1px solid white;
+    margin: 5px;
+    width: 80vw;
+    height: 50px;
+    font-size: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 20px 0;
+}
+
+@media screen and (max-width : 900px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    #search_bar{
+        padding: 10px;
+        width: 200px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    .rows{
+        display: flex;
+        border-bottom: 1px solid white;
+        margin: 5px;
+        width: 80vw;
+        height: 50px;
+        font-size: 1rem;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 10px 0;
+        align-items: center;
+    }
+    
+}
