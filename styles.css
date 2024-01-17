@@ -49,13 +49,14 @@ h1{
 .rows{
     display: flex;
     border-bottom: 1px solid white;
-    margin: 5px;
+    margin: 10px;
     width: 80vw;
-    height: 50px;
+    height: 70px;
     font-size: 2rem;
     justify-content: space-between;
     text-align: center;
     padding: 0 20px 0;
+    align-items: center;
 }
 
 @media screen and (max-width : 900px) {
