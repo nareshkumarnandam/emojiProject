@@ -12,7 +12,7 @@ body{
     background-color: rgb(22, 22, 22);
     color: white;
     text-align: center;
-    font-family: 'Caveat', cursive;
+    font-family: 'Dosis', sans-serif;
 }
 .container{
     display: flex;
@@ -25,6 +25,11 @@ body{
 
 h1{
     font-size: 4rem;
+}
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #search_bar{
@@ -42,21 +47,54 @@ h1{
     gap: 20px;
 }
 #emoji_result{
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .rows{
     display: flex;
-    border-bottom: 1px solid white;
+    background: linear-gradient(to right, #28313B, #2D3436);
     margin: 10px;
-    width: 80vw;
-    height: 70px;
-    font-size: 2rem;
+    width: 200px;
+    height: 200px;
+    font-size: 2.3rem;
     justify-content: space-between;
     text-align: center;
-    padding: 0 20px 0;
+    padding: 30px;
     align-items: center;
+    flex-direction: column;
+    gap: -10px;
+    text-wrap: wrap;
+    border-radius: 32px;
+    transition: all .2s;
+}
+.rows:hover{
+    transform: scale(1.03);
+}
+.newAliases{
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    text-wrap: wrap;
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    background-clip: text;
+    color: transparent;
+    text-overflow: ellipsis;
+}
+.newAliases:first-letter{
+    text-transform: uppercase;
+}
+.description{
+    display: block;
+    font-size: 1.2rem;
+}
+.description:first-letter{
+    text-transform: uppercase;
 }
 
 @media screen and (max-width : 900px) {

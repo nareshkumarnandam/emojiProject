@@ -28,16 +28,18 @@ function displayResult(searchQuery = ""){
     parent.innerHTML = "";
 
     filteredResult.forEach((e)=>{
-        let newRow = document.createElement("tr");
-        let newEmoji = document.createElement("td");
-        let newAliases = document.createElement("td");
-        let newDescription = document.createElement("td");
+        let newRow = document.createElement("div");
+        let newEmoji = document.createElement("div");
+        let newAliases = document.createElement("div");
+        let newDescription = document.createElement("div");
 
         newEmoji.innerText = e.emoji;
         newAliases.innerText = e.aliases;
         newDescription.innerText = e.description;
 
         newRow.classList.add("rows");
+        newAliases.classList.add("newAliases")
+        newDescription.classList.add("description");
 
         newRow.appendChild(newEmoji);
         newRow.appendChild(newAliases);
