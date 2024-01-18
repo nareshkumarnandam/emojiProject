@@ -110,7 +110,7 @@ h1{
     .rows{
         display: flex;
         margin: 2px;
-        width: 80vw;
+        width: 90vw;
         height: 100px;
         font-size: 2rem;
         justify-content: space-between;
